@@ -14,11 +14,17 @@ public class DSU {
     }
 
     public boolean union(int a, int b) {
-        if (findParent(a) == findParent(b)) {
+        int parentA = findParent(a);
+        int parentB = findParent(b);
+        if (parentA == parentB) {
             return false;
         }
         totalGroup--;
-        parent[findParent(a)] = findParent(b);
+        if (parentA < parentB) {
+            this.parent[parentB] = parentA;
+        } else {
+            this.parent[parentA] = parentB;
+        }
         return true;
     }
 
