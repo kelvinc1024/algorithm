@@ -61,4 +61,17 @@ class DSUTest {
         Assertions.assertNotEquals(dsu.findParent(9), dsu.findParent(6));
     }
 
+    @Test
+    public void dsuUnionAlwaysAssignSmallestParentId() {
+        DSU dsu = new DSU(10);
+        dsu.union(5, 8);
+        Assertions.assertEquals(5, dsu.findParent(5));
+        Assertions.assertEquals(5, dsu.findParent(5));
+
+        DSU dsu2 = new DSU(10);
+        dsu2.union(8, 5);
+        Assertions.assertEquals(5, dsu.findParent(5));
+        Assertions.assertEquals(5, dsu.findParent(5));
+    }
+
 }
