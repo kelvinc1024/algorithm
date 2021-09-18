@@ -1,4 +1,4 @@
-package graph;
+package collection;
 
 import math.GCD;
 import org.junit.jupiter.api.Assertions;
