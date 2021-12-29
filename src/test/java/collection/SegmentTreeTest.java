@@ -1,6 +1,6 @@
 package collection;
 
-import math.GCD;
+import math.MathOps;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class SegmentTreeTest {
         public void gcdRangeQueryShouldGCDALlValueInIndexRange() {
             long[] data = new long[]{6, 9, 3, 12, 2, 14, 7, 10};
 
-            SegmentTree segmentTree = new SegmentTree(data, GCD::gcd, 0);
+            SegmentTree segmentTree = new SegmentTree(data, MathOps::gcd, 0);
 
             Assertions.assertEquals(3, segmentTree.rangeQuery(0, 3));
             Assertions.assertEquals(1, segmentTree.rangeQuery(1, 4));
@@ -23,7 +23,7 @@ class SegmentTreeTest {
         public void updateValueShouldReturnUpdatedGCDAllValueInIndexRange() {
             long[] data = new long[]{6, 9, 3, 12, 2, 14, 7, 10};
 
-            SegmentTree segmentTree = new SegmentTree(data, GCD::gcd, 0);
+            SegmentTree segmentTree = new SegmentTree(data, MathOps::gcd, 0);
 
             Assertions.assertEquals(1, segmentTree.rangeQuery(0, 4));
             segmentTree.update(4, 6);
