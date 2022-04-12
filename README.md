@@ -10,6 +10,7 @@ It is incomplete but I'll add more algorithm template(s) over time and make sure
 - [Disjoint Set Union](src/main/java/graph/DSU.java)
 - [Segment Tree](src/main/java/graph/SegmentTree.java)
 
+
 ### Math
 - [Combination / Binomial Coefficient](src/main/java/math/NCR.java)
 - [Greatest Common Division](src/main/java/math/GCD.java)
