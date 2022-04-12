@@ -5,7 +5,7 @@
 Java classes that encapsulate specific algortihm that I usually use for competitive programming contest to save time from reimplement it.
 It is incomplete but I'll add more algorithm template(s) over time and make sure it is generic enough to use.
 
-## Table of Contents
+## Table of Contents (Code Link)
 ### Graph
 - [Disjoint Set Union](src/main/java/graph/DSU.java)
 - [Segment Tree](src/main/java/graph/SegmentTree.java)
