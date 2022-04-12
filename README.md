@@ -11,5 +11,5 @@ It is incomplete but I'll add more algorithm template(s) over time and make sure
 - [Segment Tree](src/main/java/graph/SegmentTree.java)
 
 ### Math
-- [Greatest Common Division](src/main/java/math/GCD.java)
 - [Combination / Binomial Coefficient](src/main/java/math/NCR.java)
+- [Greatest Common Division](src/main/java/math/GCD.java)
