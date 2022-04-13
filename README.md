@@ -1,4 +1,4 @@
-# Algorithm Class for Competitive Programming
+# Algorithm Template for Competitive Programming
 
 ![build-test](https://github.com/kelvinc1024/algorithm/actions/workflows/build-test.yaml/badge.svg)
 
