@@ -6,6 +6,21 @@ import org.junit.jupiter.api.Test;
 class DSUTest {
 
     @Test
+    void dsuGroupSizeShouldReturnSizeOfGroupFromGivenNode() {
+        DSU dsu = new DSU(10);
+
+        Assertions.assertEquals(1, dsu.groupSize(1));
+
+        dsu.union(1, 2);
+        dsu.union(1, 5);
+
+        Assertions.assertEquals(3, dsu.groupSize(1));
+        Assertions.assertEquals(3, dsu.groupSize(5));
+        Assertions.assertEquals(3, dsu.groupSize(2));
+        Assertions.assertEquals(1, dsu.groupSize(3));
+    }
+
+    @Test
     public void dsuGetTotalGroupShouldReturnUniqueNumberOfGroup() {
         DSU dsu = new DSU(10);
 
